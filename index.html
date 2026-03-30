@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F8HYEK8GHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8HYEK8GHT');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Penang</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* HERO */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1605076403437-13c2ef0a5f03');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #00bcd4;
+            padding: 12px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+
+        /* ROLLOVER EFFECT */
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background: white;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e0f7fa;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #00bcd4;
+        }
+
+        .alt {
+            background: #f4f4f4;
+        }
+
+        /* IMAGE */
+        .section-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+			display: block;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        /* CARD HOVER EFFECT */
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #00bcd4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header>
+        <div>
+            <h1>Discover Penang</h1>
+            <p>The Pearl of the Orient</p>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#food">Food</a>
+        <a href="#culture">Culture</a>
+        <a href="#places">Places</a>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Penang</h2>
+        <img class="section-img" src="https://images.unsplash.com/photo-1587474260584-136574528ed5" alt="Penang city">
+        <p>
+            Penang is one of Malaysia’s most vibrant destinations, known for its rich history,
+            multicultural society, and beautiful coastal scenery. George Town is a UNESCO
+            World Heritage Site filled with heritage buildings and modern creativity.
+        </p>
+    </section>
+
+    <!-- FOOD -->
+    <section id="food" class="alt">
+        <h2>Famous Food</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" alt="">
+                <div class="card-content">
+                    <h3>Char Kway Teow</h3>
+                    <p>Smoky stir-fried noodles with prawns and rich flavour.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Asam_laksa_Penang.jpg" alt="This is the reason we need alt-text in our work. So when the picture cannot load, we can see the description here.">
+                <div class="card-content">
+                    <h3>Asam Laksa</h3>
+                    <p>Spicy, tangy fish noodle soup unique to Penang.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="">
+                <div class="card-content">
+                    <h3>Nasi Kandar</h3>
+                    <p>Rice served with flavourful curries and side dishes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CULTURE -->
+    <section id="culture">
+        <h2>People & Culture</h2>
+        <img class="section-img" src="https://images.unsplash.com/photo-1566737236500-c8ac43014a8e" alt="Penang culture">
+        <p>
+            Penang is a melting pot of cultures including Malay, Chinese, and Indian communities.
+            This diversity is reflected in its festivals, architecture, and everyday lifestyle,
+            creating a unique and vibrant cultural experience.
+        </p>
+    </section>
+
+    <!-- PLACES -->
+    <section id="places" class="alt">
+        <h2>Famous Places</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07" alt="">
+                <div class="card-content">
+                    <h3>George Town</h3>
+                    <p>Historic streets with murals and heritage buildings.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598514982846-1cf8d6b52e65" alt="So remember that there sould be about 8 to 10 words for yout alt-text in describing your picture.">
+                <div class="card-content">
+                    <h3>Penang Hill</h3>
+                    <p>Scenic hilltop views and cool refreshing air.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1582455892434-5c6b98a3fca4" alt="day time, colourful, many people, prayers">
+                <div class="card-content">
+                    <h3>Kek Lok Si Temple</h3>
+                    <p>One of Southeast Asia’s most iconic temples.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Discover Penang | Educational Demo</p>
+    </footer>
+
+</body>
+</html>
